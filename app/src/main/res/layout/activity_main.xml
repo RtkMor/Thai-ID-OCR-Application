@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_shade_2"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--Thai ID OCR Detector Header-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/round_back_white10_20"
+            android:paddingStart="20dp"
+            android:paddingTop="10sp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="10dp"
+            android:text="Thai OCR Scanner"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/settingsIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/round_back_white10_20"
+            tools:ignore="ContentDescription,RtlHardcoded"
+            android:padding="10sp"
+            android:src="@drawable/ic_baseline_settings_24"/>
+
+    </RelativeLayout>
+
+    <!--Divider-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/blue_shade_1"/>
+
+    <!--Scroll View-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/barcode_scanner"
+                android:contentDescription="Scanner Image"
+                tools:ignore="HardcodedText" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/round_back_white10_20"
+                android:orientation="vertical"
+                tools:ignore="UselessParent">
+
+                <!--Camera Button-->
+                <RelativeLayout
+                    android:id="@+id/selectCameraBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp">
+
+                    <ImageView
+                        android:id="@+id/selectCameraIcon"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/round_back_camera"
+                        android:padding="10sp"
+                        android:src="@drawable/baseline_camera_alt_24"
+                        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_toEndOf="@id/selectCameraIcon"
+                        android:text="Scan Image Using Camera"
+                        android:textSize="13sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText,RelativeOverlap" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/right_arrow"
+                        tools:ignore="ContentDescription" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/blue_shade_2" />
+
+                <!-- Single Image Button -->
+                <RelativeLayout
+                    android:id="@+id/selectImageBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp">
+
+                    <ImageView
+                        android:id="@+id/selectImageIcon"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/round_back_gallery"
+                        android:padding="10sp"
+                        android:src="@drawable/baseline_image_search_24"
+                        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/selectImageIcon"
+                        android:text="Select Image From Gallery"
+                        android:layout_marginStart="20dp"
+                        android:textSize="13sp"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/right_arrow"
+                        tools:ignore="ContentDescription" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/blue_shade_2" />
+
+                <!--Multiple Image Button-->
+                <RelativeLayout
+                    android:id="@+id/selectMultipleImageBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp">
+
+                    <ImageView
+                        android:id="@+id/selectMultipleImageIcon"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/round_back_multiple_images"
+                        android:padding="10sp"
+                        android:src="@drawable/baseline_camera_roll_24"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_toEndOf="@id/selectMultipleImageIcon"
+                        android:text="Select Multiple Images"
+                        android:textSize="13sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText,RelativeOverlap" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/right_arrow"
+                        tools:ignore="ContentDescription" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/round_back_white10_20"
+                android:orientation="vertical"
+                tools:ignore="UselessParent">
+
+                <!--Perform Crud Operations-->
+                <RelativeLayout
+                    android:id="@+id/performCrudOperationBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp">
+
+                    <ImageView
+                        android:id="@+id/performCrudOperationIcon"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/round_back_crud"
+                        android:padding="10sp"
+                        android:src="@drawable/baseline_dataset_24"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_toEndOf="@id/performCrudOperationIcon"
+                        android:text="Perform CRUD Operations"
+                        android:textSize="13sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText,RelativeOverlap" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/right_arrow"
+                        tools:ignore="ContentDescription" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/blue_shade_2" />
+
+                <!--Add Data Manually-->
+                <RelativeLayout
+                    android:id="@+id/addDataManuallyBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp">
+
+                    <ImageView
+                        android:id="@+id/addDataManuallyIcon"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/round_back_add_manually"
+                        android:padding="10sp"
+                        android:src="@drawable/baseline_library_add_24"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_toEndOf="@id/addDataManuallyIcon"
+                        android:text="Add Data Manually"
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText,RelativeOverlap" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/right_arrow"
+                        tools:ignore="ContentDescription" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="From"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:text="Rtk Mor"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,SmallSp" />
+
+    </LinearLayout>
+
+</LinearLayout>

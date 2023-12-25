@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/editRootLayout"
+    android:layout_width="match_parent"
+    android:background="@color/blue_shade_2"
+    android:layout_height="match_parent"
+    tools:context=".EditActivity">
+
+    <ImageView
+        android:id="@+id/backBtnEdit"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/round_back_white10_20"
+        android:padding="10sp"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        tools:ignore="ContentDescription,RedundantDescriptionCheck" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/round_back_white10_20"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingStart="20dp"
+        android:paddingTop="10sp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="10dp"
+        android:text="Edit Database"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <!--Divider-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/backBtnEdit"
+        android:background="@color/blue_shade_1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_back_white10_20"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:padding="5dp"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="Name : "
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/nameEt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/name"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText,LabelFor,SpeakableTextPresentCheck,TextFields,TouchTargetSizeCheck"
+                android:importantForAutofill="no" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:id="@+id/lastName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="Last Name : "
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/lastNameEt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/lastName"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                tools:ignore="Autofill,HardcodedText,LabelFor,SpeakableTextPresentCheck,TextFields,TouchTargetSizeCheck" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:id="@+id/idNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="ID Number : "
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/idNumberEt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_toEndOf="@+id/idNumber"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                tools:ignore="Autofill,HardcodedText,LabelFor,SpeakableTextPresentCheck,TextFields,TouchTargetSizeCheck" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:id="@+id/DOB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="Date Of Birth : "
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/dobEt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/DOB"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                tools:ignore="Autofill,HardcodedText,LabelFor,SpeakableTextPresentCheck,TextFields,TouchTargetSizeCheck" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:id="@+id/issue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="Date Of Issue : "
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/issueEt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/issue"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                tools:ignore="Autofill,HardcodedText,LabelFor,SpeakableTextPresentCheck,TextFields,TouchTargetSizeCheck" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:id="@+id/expiry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="Date Of Expiry : "
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/expiryEt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/expiry"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                tools:ignore="Autofill,HardcodedText,LabelFor,SpeakableTextPresentCheck,TextFields,TouchTargetSizeCheck" />
+
+        </RelativeLayout>
+
+        <!-- Save Button -->
+        <TextView
+            android:id="@+id/saveBtn"
+            style="@style/BeautifulButton2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:text="SAVE"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="Autofill,HardcodedText" />
+
+    </LinearLayout>
+
+</RelativeLayout>

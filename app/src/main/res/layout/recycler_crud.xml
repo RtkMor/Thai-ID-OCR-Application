@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/recCrud"
+    android:background="@drawable/round_back_white10_20"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:padding="5dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Name : "
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/recName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/name"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/editBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="Edit Button"
+            android:src="@drawable/baseline_edit_24"
+            tools:ignore="HardcodedText,RedundantDescriptionCheck" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/lastName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="Last Name : "
+            android:textSize="15sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/recLastName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/lastName"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/deleteBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="Edit Button"
+            android:src="@drawable/baseline_delete_24"
+            tools:ignore="HardcodedText,RedundantDescriptionCheck" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/idNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="ID Number : "
+            android:textSize="15sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/recIdNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_toEndOf="@+id/idNumber"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/DOB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="Date Of Birth : "
+            android:textSize="15sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/recDOB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/DOB"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/issue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="Date Of Issue : "
+            android:textSize="15sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/recIssue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/issue"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/expiry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="Date Of Expiry : "
+            android:textSize="15sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/recExpiry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/expiry"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+
+</LinearLayout>

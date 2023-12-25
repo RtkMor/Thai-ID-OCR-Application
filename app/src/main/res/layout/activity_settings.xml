@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/blue_shade_2"
+    tools:context=".SettingsActivity">
+
+    <!--Settings Text Header-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/backBtnSettings"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/round_back_white10_20"
+            android:padding="10sp"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            tools:ignore="ContentDescription,RedundantDescriptionCheck" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/round_back_white10_20"
+            android:paddingStart="20dp"
+            android:paddingTop="10sp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="10dp"
+            android:text="Settings"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+
+    <!--Divider-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/blue_shade_1"/>
+
+    <!--Night Mode and Notifications-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_back_white10_20"
+        android:orientation="vertical">
+
+        <!--Dark Mode / Night Mode-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <ImageView
+                android:id="@+id/nightModeIcon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/round_back_night_mode"
+                android:padding="10sp"
+                android:src="@drawable/baseline_nightlight_round_24"
+                tools:ignore="ContentDescription,ImageContrastCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@id/nightModeIcon"
+                android:text="Switch Themes"
+                android:textSize="13sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,RelativeOverlap" />
+
+            <Switch
+                android:id="@+id/NightModeSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:checked="true"
+                android:minWidth="60dp"
+                android:theme="@style/NightModeSwitch"
+                tools:ignore="UseSwitchCompatOrMaterialXml,DuplicateSpeakableTextCheck,TouchTargetSizeCheck" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/blue_shade_2" />
+
+        <!--Notifications-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <ImageView
+                android:id="@+id/notificationIcon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/round_back_notifications"
+                android:padding="10sp"
+                android:src="@drawable/ic_baseline_notifications_24"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@id/notificationIcon"
+                android:text="Notifications"
+                android:textSize="13sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,RelativeOverlap" />
+
+            <Switch
+                android:id="@+id/NotificationSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:checked="true"
+                android:minWidth="60dp"
+                android:theme="@style/NotificationSwitch"
+                tools:ignore="UseSwitchCompatOrMaterialXml,TouchTargetSizeCheck" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

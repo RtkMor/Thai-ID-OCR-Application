@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "670706134214",
+    "firebase_url": "https://thai-id-ocr-app-default-rtdb.firebaseio.com",
+    "project_id": "thai-id-ocr-app",
+    "storage_bucket": "thai-id-ocr-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:670706134214:android:9e169df2f599f09f2cfbc7",
+        "android_client_info": {
+          "package_name": "com.example.thaiocrscanne"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBP60TIGnFa35kwxB8Cej-kZr2RdurUtXc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:670706134214:android:ac21f55e41995c6f2cfbc7",
+        "android_client_info": {
+          "package_name": "com.example.thaiocrscanner"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBP60TIGnFa35kwxB8Cej-kZr2RdurUtXc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

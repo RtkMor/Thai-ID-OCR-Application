@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rootLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_shade_2"
+    tools:context=".CrudActivity">
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/blue_shade_1"/>
+
+    <!-- Search Bar UI -->
+    <LinearLayout
+        android:id="@+id/searchBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#1AFFFFFF"
+        android:layout_marginStart="10dp"
+        android:layout_below="@id/view1"
+        android:layout_marginEnd="10dp"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/dropBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/baseline_arrow_drop_down_white_24"
+            android:layout_gravity="center"
+            tools:ignore="ContentDescription" />
+
+        <EditText
+            android:id="@+id/searchEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="5dp"
+            android:hint="Search"
+            android:textSize="13sp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            tools:ignore="Autofill,DuplicateSpeakableTextCheck,HardcodedText,TextFields,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+        <ImageView
+            android:id="@+id/searchButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="5dp"
+            android:onClick="searchBtnClicked"
+            android:src="@drawable/baseline_search_24"
+            android:text="Search"
+            tools:ignore="ContentDescription,HardcodedText" />
+    </LinearLayout>
+
+    <!-- Option -->
+    <LinearLayout
+        android:id="@+id/searchOptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@id/searchBarLayout"
+        android:orientation="horizontal"
+        tools:ignore="ExtraText">
+
+        <TextView
+            android:id="@+id/nameButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/black"
+            android:padding="5dp"
+            android:text="Name"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,VisualLintBounds" />
+
+        <TextView
+            android:id="@+id/lastNameButton"
+            android:background="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="Last Name"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,VisualLintBounds" />
+
+        <TextView
+            android:id="@+id/idNumberButton"
+            android:background="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="ID No"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,VisualLintBounds" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/blue_shade_1"
+        android:layout_below="@id/searchOptions"/>
+
+    <!-- Sort Option -->
+    <LinearLayout
+        android:id="@+id/sortOptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view2"
+        android:background="@color/blue_shade_2"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal"
+            tools:ignore="ExtraText,UselessParent">
+
+            <TextView
+                android:id="@+id/randomButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/black"
+                android:padding="5dp"
+                android:text="Random"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,VisualLintBounds" />
+
+            <TextView
+                android:id="@+id/alphabeticalButton"
+                android:background="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="Alphabetical"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,VisualLintBounds" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/blue_shade_1"
+        android:layout_below="@+id/sortOptions"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/view3"
+        android:id="@+id/recyclerViewCrud"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_centerInParent="true"
+        android:visibility="visible"/>
+
+</RelativeLayout>

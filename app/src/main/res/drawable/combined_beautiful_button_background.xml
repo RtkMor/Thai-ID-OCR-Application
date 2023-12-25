@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background shape with screen background color -->
+    <item>
+        <shape android:shape="rectangle">
+            <!-- Set the background color to match the screen background color -->
+            <solid android:color="@color/blue_shade_2" />
+            <!-- You can adjust the corner radius if needed -->
+            <corners android:radius="8dp" />
+        </shape>
+    </item>
+    <!-- Border shape with a different color -->
+    <item>
+        <shape android:shape="rectangle">
+            <!-- Set the border color and stroke width -->
+            <stroke android:color="#FF0000" android:width="2dp" />
+            <!-- You can adjust the corner radius to match the background shape if needed -->
+            <corners android:radius="8dp" />
+        </shape>
+    </item>
+</layer-list>
