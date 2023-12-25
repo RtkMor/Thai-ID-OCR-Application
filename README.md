@@ -1,7 +1,7 @@
 # Thai ID OCR Scanner
 
 ## Description
-Thai ID OCR Scanner is a mobile application designed to analyze Thai ID cards using Optical Character Recognition (OCR). The app integrates with Google Vision API for OCR processing, extracting key information such as name, last name, identification number, date of birth, date of issue, and date of expiry. The extracted data is then structured and saved in a database in JSON format.
+Thai ID OCR Scanner is a mobile application designed to analyze Thai ID cards using Optical Character Recognition (OCR). The app integrates with Google Vision API for OCR processing, extracting key information such as name, last name, identification number, date of birth, date of issue, and date of expiry. The extracted data is then structured and saved in a database in JSON format, to perform various CRUD operations on it later.
 
 ## Objective
 The main objectives of the Thai ID OCR Scanner are:
@@ -60,10 +60,13 @@ The final data saved in the database is in JSON format.
 - implementation 'com.google.firebase:firebase-database:20.2.2'
 
 ## Installation
-Download the APK source file and install it on your Android device.
+- Download the APK source file and install it on your Android device.
+- I can deploy my app only on Google Play Store but it's not free so I saved my apk file in google drive
+- https://drive.google.com/drive/folders/1PzQzbzQQcY1yFdhaDDZ4p9u44slX5-Tl?usp=sharing
+
 
 ## Contributing
-Solo Levelling -> Ritik Mor
+Solo Leveling -> Ritik Mor
 
 ## Acknowledgments
 - Google Vision ML Kit
@@ -72,4 +75,6 @@ Solo Levelling -> Ritik Mor
 - Qoala Placement Assignment
 
 ## Author
-- Ritik Mor (https://github.com/RtkMor)
+- Ritik Mor
+- https://github.com/RtkMor
+- https://www.linkedin.com/in/ritik-mor-87a716229/
