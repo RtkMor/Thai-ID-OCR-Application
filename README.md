@@ -61,7 +61,7 @@ The final data saved in the database is in JSON format.
 
 ## Installation
 - Download the APK source file and install it on your Android device.
-- I can deploy my app only on Google Play Store but it's not free so I saved my apk file in google drive
+- Only Google Play Store deploy mobile applications, but its not free so I am providing google drive link for my working prototype
 - https://drive.google.com/drive/folders/1PzQzbzQQcY1yFdhaDDZ4p9u44slX5-Tl?usp=sharing
 
 
